@@ -1,20 +1,27 @@
 {
 	"compilerOptions": {
 	  "target": "ESNext",
-	  "useDefineForClassFields": true,
 	  "module": "ESNext",
-	  "moduleResolution": "node",
 	  "strict": true,
 	  "jsx": "preserve",
+	  "moduleResolution": "node",
 	  "esModuleInterop": true,
 	  "skipLibCheck": true,
 	  "forceConsistentCasingInFileNames": true,
 	  "baseUrl": ".",
 	  "paths": {
 		"@/*": ["src/*"]
-	  }
+	  },
+	  "allowJs": true, // JavaScript 파일을 허용
+	  "checkJs": false  // (선택사항) JavaScript 파일에서 오류를 검사하지 않도록 설정
 	},
-	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+	"include": [
+	  "src/**/*.ts",
+	  "src/**/*.d.ts",
+	  "src/**/*.tsx",
+	  "src/**/*.vue",
+	  "src/**/*.js"  // JavaScript 파일도 포함
+	],
 	"exclude": ["node_modules"]
   }
   
